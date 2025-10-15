@@ -1,54 +1,114 @@
-# Dublin Coffee Shop Location Analysis
+# Dublin Coffee Shop Market Analysis
 
-## 📊 Business Intelligence Project
+**Business Intelligence Project - Data Analytics**
 
-**Business Question:** Where are the optimal locations in Dublin to open a new coffee shop?
+A comprehensive analysis of Dublin's restaurant market to assess the viability of opening a new coffee shop, using TripAdvisor data and Python-based analytics.
 
 ## 🎯 Project Overview
 
-This project analyzes multiple factors to identify the best locations for a coffee shop in Dublin:
-- Existing coffee shop competition density
-- Demographics by neighborhood (age, income, employment)
-- Commercial rental prices
-- Foot traffic patterns and public transport access
-- Location viability scoring system
+**Business Question:** Should I open a coffee shop in Dublin?
 
-## 📁 Data Sources
+This project analyzes 2,082 restaurants in Dublin to understand:
+- Market competition and saturation
+- Quality standards and customer expectations
+- Pricing dynamics
+- Success factors for cafes
 
-Data collected from:
-- **Coffee shop locations:** Kaggle datasets, web data
-- **Dublin demographics:** Central Statistics Office Ireland (CSO)
-- **Rental prices:** Commercial property listings
-- **Foot traffic:** Dublin City Council open data, transport statistics
+## 📊 Key Findings
 
-See [data/data_sources.md](data/data_sources.md) for detailed documentation.
+- **269 cafes** currently operate in Dublin (12.9% market share)
+- **70%+ of establishments** achieve 4.0+ ratings
+- Success requires **4.5+ star ratings** consistently
+- Quality execution matters more than price point
 
-## 🛠️ Technologies Used
+## 🔗 Live Website
 
-- **Python:** pandas, numpy, matplotlib, seaborn, plotly, folium
-- **Jupyter Notebooks** for analysis
-- **GitHub Pages** for deployment
-- **VS Code** with GitHub Copilot
+View the interactive dashboard: [https://alexsantiago4.github.io/dublin-coffee-shop-analysis/](https://alexsantiago4.github.io/dublin-coffee-shop-analysis/)
 
-## 🚀 Live Website
+## 📁 Project Structure
+```
+dublin-coffee-shop-analysis/
+├── data/
+│   └── TA_restaurants_curated.csv
+├── notebooks/
+│   ├── 01_data_exploration.ipynb
+│   ├── 02_visualizations.py
+│   └── create_additional_visualizations.py
+├── images/
+│   └── [8 visualization PNG files]
+├── index.html
+└── README.md
+```
 
-Coming soon: [View Analysis](https://alexsantiago4.github.io/dublin-coffee-shop-analysis/)
+## 🛠️ Tools & Technologies
 
-## 📂 Project Structure## 📅 Timeline
+- **Python 3.9+**
+- **Libraries:** pandas, matplotlib, seaborn
+- **Data Source:** TripAdvisor restaurant data
+- **Deployment:** GitHub Pages
 
-**Project Duration:** October 14-18, 2024 (5 days)
+## 📈 Visualizations
 
-## 🎓 Analysis Types
+The analysis includes 8 data visualizations:
+1. Top Cuisine Types in Dublin
+2. Rating Distribution Analysis
+3. Cafe Performance Analysis
+4. Price Range vs Rating
+5. Review Volume Distribution
+6. Customer Engagement Analysis
+7. Top vs Bottom Performers
+8. Market Saturation by Quality Tier
 
-- **Descriptive Analytics:** Current market landscape
-- **Diagnostic Analytics:** Why certain locations succeed
-- **Predictive Analytics:** Location viability forecasting
-- **Prescriptive Analytics:** Actionable recommendations
+## 🚀 How to Run
+
+1. **Clone the repository:**
+```bash
+git clone https://github.com/alexsantiago4/dublin-coffee-shop-analysis.git
+cd dublin-coffee-shop-analysis
+```
+
+2. **Create virtual environment:**
+```bash
+python -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+```
+
+3. **Install dependencies:**
+```bash
+pip install -r requirements.txt
+```
+
+4. **Run visualizations:**
+```bash
+python notebooks/create_additional_visualizations.py
+```
+
+## 📝 Requirements
+
+See `requirements.txt` for full list. Main dependencies:
+- pandas
+- matplotlib
+- seaborn
+- jupyter
 
 ## 👤 Author
 
-Alex Santiago - Business Intelligence Project 2024
+**Manuel Alejandro Santiago Cruz**
 
----
+## 📅 Project Timeline
 
-**Status:** 🚧 In Progress
+Completed in approximately 11 hours over 2 days (October 2025)
+
+## 🤖 AI Collaboration
+
+This project utilized AI assistance (Claude) for:
+- Python code generation and debugging
+- Visualization creation
+- HTML/CSS development
+- Problem-solving and technical guidance
+
+The business analysis, strategic insights, and critical thinking were provided by the human analyst.
+
+## 📄 License
+
+This project is for educational purposes as part of a Business Intelligence course.
